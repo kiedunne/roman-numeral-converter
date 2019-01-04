@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="style.css">
+
     <title>roman numeral converter</title>
   </head>
   <body>
       <div class='content'>
-        <div class='user_num_div'>
-          <h1>The number you entered.</h1>
-          <h1><%=@number%></h1>
+        <div>
+          <h1>decimal number.</h1>
+          <h1 class='result'><%=@number%></h1>
         </div>
-        <div class='roman_num_div'>
-          <h1>Your roman numeral.</h1>
-          <h1><%=@roman_numeral.roman_numeral%></h1>
+        <div>
+          <h1>roman numeral.</h1>
+          <h1 class='result'><%=@roman_numeral.roman_numeral%></h1>
         </div>
-        <div class='enter_num'>
-          <form action='/convert' method='post'>
-            <input type='nubmer' name ='number'>
-            <input type='submit' value='convert again'>
+        <div>
+        <form action='/convert' method='post'>
+          <div class='enter'><input type='number' name ='number'></div>
+          <div class='enter'><input type='submit' value='convert'></div>
+        </form>
         </div>
       </div>
     </body>
