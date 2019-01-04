@@ -14,5 +14,10 @@
           <h1 class="heading-text">Here's your roman numeral.</h1>
           <h1 class="result"><%=@roman_numeral.roman_numeral.join%></h1>
         </div>
+        <div class='enter_num'>
+          <form action='/convert' method='post'>
+            <input type='nubmer' name ='number'>
+            <input type='submit' value='convert again'>
+        </div>
     </body>
 </html>
