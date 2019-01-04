@@ -13,7 +13,13 @@ class Converter < Sinatra::Base
 
   post '/convert' do
     session[:number] = params[:number]
+    @rm = RomanNumeral.create
+    @rm.convert(params[:number])
     redirect '/result'
+  end
+
+  before do
+    @roman_numeral = RomanNumeral.instance
   end
 
   get '/result' do

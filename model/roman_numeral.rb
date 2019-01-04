@@ -1,5 +1,6 @@
 
 class RomanNumeral
+attr_reader :roman_numeral
 
   NUMERALS = {
     1000 => 'M',
@@ -18,12 +19,20 @@ class RomanNumeral
   }
 
   def initialize
-      @roman_numeral = []
+    @roman_numeral = []
+  end
+
+  def self.create
+    @instance = RomanNumeral.new
+  end
+
+  def self.instance
+    @instance
   end
 
   def convert(number)
-    NUMERALS.each { |key, val| (number/key).times { @roman_numeral << val ; number -= key } }
+    integer = number.to_i
+    NUMERALS.each { |key, val| (integer/key).times { @roman_numeral << val ; integer -= key } }
     @roman_numeral.join
   end
-
 end
