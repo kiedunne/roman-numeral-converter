@@ -33,6 +33,6 @@ attr_reader :roman_numeral
   def convert(number)
     integer = number.to_i
     NUMERALS.each { |key, val| (integer/key).times { @roman_numeral << val ; integer -= key } }
-    @roman_numeral.join
+    @roman_numeral = @roman_numeral.join
   end
 end
