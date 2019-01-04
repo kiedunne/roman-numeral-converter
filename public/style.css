@@ -1,0 +1,16 @@
+body {
+    background-color: #f7d7d7;
+}
+
+h1 {
+  font-family: arial;
+  font-size: 30px;
+  font-weight: bold;
+  color: #90d3f9;
+}
+
+div.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
