@@ -90,5 +90,12 @@ input[type=number] {
   border-style: none;
   outline: none;
 }
-input[type=number]:focus::-webkit-input-placeholder { color:transparent; }
-input[type=number]:focus::-moz-placeholder { color:transparent; }
+input[type=number]::placeholder {
+  color:#81bdfe;
+}
+input[type=number]:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+input[type=number]:focus::-moz-placeholder {
+  color:transparent;
+}
