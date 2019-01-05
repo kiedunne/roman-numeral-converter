@@ -1,4 +1,6 @@
 
+# frozen_string_literal: true
+
 feature 'User can see conversion table' do
   scenario 'User can see table' do
     visit('/table')

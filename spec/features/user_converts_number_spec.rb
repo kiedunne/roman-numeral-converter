@@ -1,4 +1,6 @@
 
+# frozen_string_literal: true
+
 feature 'Number is converted to roman numeral' do
   scenario 'User can enter a number and see the converted numeral' do
     visit('/')

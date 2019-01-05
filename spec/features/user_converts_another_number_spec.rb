@@ -1,4 +1,6 @@
 
+# frozen_string_literal: true
+
 feature 'User can convert another number' do
   scenario 'User can see button to convert another number' do
     visit('/')

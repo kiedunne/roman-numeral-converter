@@ -1,6 +1,8 @@
 
+# frozen_string_literal: true
+
 class RomanNumeral
-attr_reader :roman_numeral
+  attr_reader :roman_numeral, :instance
 
   DICTIONARY = {
     1000 => 'M',
@@ -16,7 +18,7 @@ attr_reader :roman_numeral
     5 => 'V',
     4 => 'IV',
     1 => 'I'
-  }
+  }.freeze
 
   def initialize
     @roman_numeral = []
@@ -32,7 +34,12 @@ attr_reader :roman_numeral
 
   def convert(number)
     integer = number.to_i
-    DICTIONARY.each { |key, val| (integer/key).times { @roman_numeral << val ; integer -= key } }
+    DICTIONARY.each do |key, val|
+      (integer / key).times do
+        @roman_numeral << val
+        integer -= key
+      end
+    end
     @roman_numeral = @roman_numeral.join
   end
 end
