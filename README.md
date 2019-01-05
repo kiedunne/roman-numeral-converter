@@ -1,10 +1,11 @@
 
 # Roman Numerals Converter
 
-![Screenshot](app_view.png)
+<p align="center"><img src="./browser_view.png" width="50%" height="50%"></p>
 
 Deployed at https://roman-numeral-converter-kie.herokuapp.com
-A simple roman numerals converter app made to practice TDD principles and deployment. 
+
+A simple roman numerals converter app made to practice TDD principles and deployment.
 
 ### Local Setup
 
