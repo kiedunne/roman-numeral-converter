@@ -1,7 +1,50 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+img {
+  width:100px;
+  height:100px;
+  padding: 10px;
+  padding-bottom: 0px;
+  }
+.left {
+  display: flex;
+  flex-direction: row;
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+.logo-text-line {
+  margin: 0px;
+  text-align: left;
+  font-size: 33px;
+  font-weight: lighter;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
 body {
   background-color: #e56874;
 }
-
+h1.nav-text {
+  text-align: right;
+  margin: 0px;
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  padding: 5px;
+}
+a:hover {
+  background-color: white;
+  border-radius: 5px;
+}
 h1 {
   font-family: arial;
   font-size: 30px;
@@ -9,7 +52,6 @@ h1 {
   color: #81bdfe;
   text-align: center;
 }
-
 h1.result {
   padding: 10px;
   border: solid;
@@ -17,7 +59,6 @@ h1.result {
   border-color: #81bdfe;
   border-width: 50%;
 }
-
 div.content {
   display: flex;
   flex-direction: column;
@@ -25,11 +66,9 @@ div.content {
   justify-content: center;
   padding: 50px;
 }
-
 div.enter {
   padding: 20px;
 }
-
 input[type=submit] {
   font-weight: lighter;
   background-color: #81bdfe;
@@ -39,11 +78,10 @@ input[type=submit] {
   border-radius: 10px;
   width: 100%;
 }
-
 input[type=submit]:hover {
-  opacity: 0.5;
+  color: #81bdfe;
+  background-color: white;
 }
-
 input[type=number] {
   font-weight: lighter;
   text-align: center;

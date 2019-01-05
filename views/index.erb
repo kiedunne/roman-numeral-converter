@@ -3,13 +3,26 @@
   <head>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="style.css">
-    <title>roman numeral converter</title>
+    <header>
+      <div class="left">
+        <img class="logo" src="/images/logo.png"</img>
+        <div class="logo-text">
+          <h1 class="logo-text-line">roman</h1>
+          <h1 class="logo-text-line">numeral</h1>
+          <h1 class="logo-text-line">converter</h1>
+        </div>
+      </div>
+      <div class="right">
+        <h1 class="nav-text"><a class="nav-link" href="/">converter </a></h1>
+        <h1 class="nav-text"><a class="nav-link" href="#">table</a></h1>
+      </div>
+    </header>
   </head>
   <body>
   <div class='content'>
     <h1>Enter a number</h1>
     <div>
-    <form action='/convert' method='post'>
+    <form action='/convert' method='post' autocomplete="off">
       <div class='enter'><input type='number' name ='number'></div>
       <div class='enter'><input type='submit' value='convert'></div>
     </form>
