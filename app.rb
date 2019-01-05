@@ -7,7 +7,6 @@ class Converter < Sinatra::Base
   enable :sessions
   set :sessions_secret, 'My session secret'
 
-
   get '/' do
     erb(:index)
   end

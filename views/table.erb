@@ -21,17 +21,19 @@
     </header>
   </head>
   <body>
-      <div class='content'>
-        <div class='table-title'>
-          <h1 class="tt">decimal</h1>
-          <h1 class="tt">roman</h1>
-        </div>
+    <div class='table-container'>
+    <div class='table-title'>
+      <h1 class="tt">decimal</h1>
+      <h1 class="tt">roman</h1>
+    </div>
+      <div class='table-content'>
           <% @dictionary.reverse_each do |key,value| %>
         <div class="table-pair">
           <h1 class='table-text'><%= key %></h1>
           <h1 class='table-text'><%= value %></h1>
         </div>
         <% end %>
+      </div>
       </div>
     </body>
 </html>
