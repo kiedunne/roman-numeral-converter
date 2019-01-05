@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="right">
-        <h1 class="nav-text"><a class="nav-link" href="/">converter </a></h1>
+        <h1 class="nav-text"><a class="nav-link" href="/">converter</a></h1>
         <h1 class="nav-text"><a class="nav-link" href="#">table</a></h1>
       </div>
     </header>
@@ -24,17 +24,20 @@
       <div class='content'>
         <div>
           <h1>decimal number.</h1>
-          <h1 class='result'><%=@number%></h1>
-        </div>
-        <div>
-          <h1>roman numeral.</h1>
-          <h1 class='result'><%=@roman_numeral.roman_numeral%></h1>
-        </div>
-        <div>
-        <form action='/convert' method='post'autocomplete="off">
-          <div class='enter'><input type='number' name ='number'></div>
-          <div class='enter'><input type='submit' value='convert'></div>
-        </form>
+          <form action='/convert' method='post'autocomplete="off">
+            <% if @number %>
+              <h1 class='result'><input type='number' name ='number' placeholder="<%=@number%>"></h1>
+            <% else %>
+              <h1 class='result'><input type='number' name ='number' placeholder=""></h1>
+            <% end %>
+            <h1>roman numeral.</h1>
+            <% if @roman_numeral.roman_numeral %>
+              <h1 class='result'><%=@roman_numeral.roman_numeral%></h1>
+            <% else %>
+            <h1 class='result'></h1>
+            <% end %>
+            <div class='enter'><input type='submit' value='convert'></div>
+          </form>
         </div>
       </div>
     </body>

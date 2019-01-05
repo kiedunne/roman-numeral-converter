@@ -57,7 +57,6 @@ h1.result {
   border: solid;
   border-radius: 90px;
   border-color: #81bdfe;
-  border-width: 50%;
 }
 div.content {
   display: flex;
@@ -83,12 +82,13 @@ input[type=submit]:hover {
   background-color: white;
 }
 input[type=number] {
-  font-weight: lighter;
+  font-weight: bold;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   color: #81bdfe;
-  border-radius: 10px;
-  width: 100%;
+  background-color: transparent;
   border-style: none;
   outline: none;
 }
+input[type=number]:focus::-webkit-input-placeholder { color:transparent; }
+input[type=number]:focus::-moz-placeholder { color:transparent; }
