@@ -4,7 +4,7 @@ require 'sinatra/base'
 require 'capybara/rspec'
 require 'rspec'
 require_relative './model/roman_numeral.rb'
-
+# This class controlls requests
 class Converter < Sinatra::Base
   enable :sessions
   set :sessions_secret, 'My session secret'

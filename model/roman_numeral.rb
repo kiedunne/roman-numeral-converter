@@ -1,6 +1,7 @@
 
 # frozen_string_literal: true
 
+# This class converts numbers
 class RomanNumeral
   attr_reader :roman_numeral, :instance
 
@@ -28,8 +29,8 @@ class RomanNumeral
     @instance = RomanNumeral.new
   end
 
-  def self.instance
-    @instance
+  class << self
+     attr_reader :instance
   end
 
   def convert(number)
