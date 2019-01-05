@@ -7,6 +7,7 @@ class Converter < Sinatra::Base
   enable :sessions
   set :sessions_secret, 'My session secret'
 
+
   get '/' do
     erb(:index)
   end
@@ -25,6 +26,11 @@ class Converter < Sinatra::Base
   get '/result' do
     @number = session[:number]
     erb(:result)
+  end
+
+  get '/table' do
+    @dictionary = RomanNumeral::DICTIONARY
+    erb(:table)
   end
 
   run! if app_file == $0

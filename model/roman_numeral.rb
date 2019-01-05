@@ -2,7 +2,7 @@
 class RomanNumeral
 attr_reader :roman_numeral
 
-  NUMERALS = {
+  DICTIONARY = {
     1000 => 'M',
     900  => 'CM',
     500  => 'D',
@@ -32,7 +32,7 @@ attr_reader :roman_numeral
 
   def convert(number)
     integer = number.to_i
-    NUMERALS.each { |key, val| (integer/key).times { @roman_numeral << val ; integer -= key } }
+    DICTIONARY.each { |key, val| (integer/key).times { @roman_numeral << val ; integer -= key } }
     @roman_numeral = @roman_numeral.join
   end
 end

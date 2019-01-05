@@ -22,23 +22,16 @@
   </head>
   <body>
       <div class='content'>
-        <div>
-          <h1>decimal number.</h1>
-          <form action='/convert' method='post'autocomplete="off">
-            <% if @number %>
-              <h1 class='result'><input type='number' name ='number' value="<%=@number%>"></h1>
-            <% else %>
-              <h1 class='result'><input type='number' name ='number'</h1>
-            <% end %>
-            <h1>roman numeral.</h1>
-            <% if @roman_numeral.roman_numeral %>
-              <h1 class='result'><%=@roman_numeral.roman_numeral%></h1>
-            <% else %>
-            <h1 class='result'></h1>
-            <% end %>
-            <div class='enter'><input type='submit' value='convert again'></div>
-          </form>
+        <div class='table-title'>
+          <h1 class="tt">decimal</h1>
+          <h1 class="tt">roman</h1>
         </div>
+          <% @dictionary.reverse_each do |key,value| %>
+        <div class="table-pair">
+          <h1 class='table-text'><%= key %></h1>
+          <h1 class='table-text'><%= value %></h1>
+        </div>
+        <% end %>
       </div>
     </body>
 </html>
