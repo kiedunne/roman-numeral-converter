@@ -15,16 +15,16 @@ class Converter < Sinatra::Base
     session[:number] = params[:number]
     @rm = RomanNumeral.create
     @rm.convert(params[:number])
-    redirect '/result'
+    redirect '/converter'
   end
 
   before do
     @roman_numeral = RomanNumeral.instance
   end
 
-  get '/result' do
+  get '/converter' do
     @number = session[:number]
-    erb(:result)
+    erb(:converter)
   end
 
   get '/table' do

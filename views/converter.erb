@@ -15,8 +15,8 @@
         </div>
       </div>
       <div class="right">
-        <h1 class="nav-text"><a href="/">converter</a></h1>
-        <h1 class="nav-text"><a href="/table">table</a></h1>
+        <div><a href="/converter"><img class="nav-img" src="/images/abacus.png"></a></div>
+        <div><a href="/table"><img class="nav-img" src="/images/grid.png"></a></div>
       </div>
     </header>
   </head>
@@ -31,7 +31,7 @@
               <h1 class='result'><input type='number' name ='number'</h1>
             <% end %>
             <h1>roman numeral.</h1>
-            <% if @roman_numeral.roman_numeral %>
+            <% if @roman_numeral != nil %>
               <h1 class='result'><%=@roman_numeral.roman_numeral%></h1>
             <% else %>
             <h1 class='result'></h1>
@@ -40,5 +40,11 @@
           </form>
         </div>
       </div>
+      <footer>
+        <div class="footer">
+          <img class="foot-img" src="/images/heart.png">
+          <h3>made with love by <a href="https://www.github.com/kiedunne">kie</a></h3>
+          <h3 class="icon-link">icons made by <a href="https://www.freepik.com">Freepik</a></div>
+      </footer>
     </body>
 </html>
