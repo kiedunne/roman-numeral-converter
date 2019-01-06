@@ -4,14 +4,14 @@ header {
   justify-content: space-between;
 }
 img.logo {
-  width:100px;
-  height:100px;
+  width:80px;
+  height:80px;
   padding: 10px;
   padding-bottom: 0px;
   }
 img.nav-img {
-  width:70px;
-  height:70px;
+  width:60px;
+  height:60px;
   padding: 20px;
 }
 img.nav-img:hover {
@@ -30,7 +30,7 @@ img.nav-img:hover {
 .logo-text-line {
   margin: 0px;
   text-align: left;
-  font-size: 33px;
+  font-size: 27px;
   font-weight: lighter;
 }
 .right {
@@ -46,7 +46,6 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-
 }
 h1 {
   font-family: arial;
@@ -66,7 +65,7 @@ div.content {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 90px;
 }
 div.enter {
   padding: 20px;
