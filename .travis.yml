@@ -2,7 +2,6 @@ language: ruby
 rvm:
  - 2.5
 
-install: ./install-dependencies.sh
 script:
 - bundle exec rspec spec/
 before_install:
