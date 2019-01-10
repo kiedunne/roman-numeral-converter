@@ -1,7 +1,7 @@
 language: ruby
 rvm:
  - 2.2
- - jruby
+
 install: ./install-dependencies.sh
 script:
 - bundle exec rspec spec/
