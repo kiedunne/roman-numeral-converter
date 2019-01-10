@@ -1,7 +1,6 @@
 language: ruby
 rvm:
- - 2.5.1
-
+- 2.5.1
 script:
 - bundle exec rspec spec/
 before_install:
@@ -10,6 +9,6 @@ before_install:
 deploy:
   provider: heroku
   api_key:
-    secure:
+    secure: ViR6aUzmr5z68eezJVJqF2DSPrFy/KoakYNFSAH6XWui1IFm3bGx0R1rYeazj+FW/Jt8AlxgqWFLypgHagOPQO6DO9GAvjnJAx9GQDxXZPGYR6jjDV6GTSGumYepP1eSEFeWdBssG5ZEwv52VSChvlJWH6P7eYmlFuWhIuC8HP9Op3ZlUEWo9uIzRCUiHd6j2swfAzFYAx3d6EQQK6AflDA0+CZ0x4E+KFQ/2B+XP70hpss5gnsG4M9iECupyVvkjX6ky41hutJO5u1hM/z3SXs5BvhDKrBUIJ+pVK/WG9nzI5Lln9ncJbiGdvhxTUI4dqKjzJ7D6O6PM/laYAMvYdrwBMPf3RFt+9pfqZKLaHOVgCgVpH8G39Z7l2Xf9T6obL6joZkV42EqnS5Zk6ZQo21jieXyYej5o3SvOtlgGOyZFXGRSH/CrWgucyL81UtPB4DQYEZUrfziDsBbkmDWMqQ5igGm6+HopTKuB1t2Oof0UnoxnlOOJUtjWtZWjpyJwIFL3iRd9LY6R3TMy3g/JNcPi8mpxo+R0jwsNGJfWvCeh1MAeV85ePZno5ng3OqQHlT0tP0i6ybe/vmNXX8sMarfHWy2pv4aMiJ1lGfmfiZSbxilIOH9xoh/Gql2lfNdltI8ozgxGBiVttfODe9d/Da218VHJa+ja+wjZWgdUOw=
   on:
     repo: kiedunne/roman-numeral-converter
