@@ -10,13 +10,3 @@ after_script:
   - bundle exec rake coveralls:push
 env:
   - CODECOV_TOKEN = 437fc80c-9262-4f77-9634-245c534306bb
-deploy:
-  provider: heroku
-  api_key:
-    secure: "lDtrEnweprTSfVnZzVROINb8PekECfSnaR5GP3GY8WZ50j9BO8qCDQA0fd8tM6pIV/DhW2wKwj6wbjb4MtFi2xtV3uCL3pJpg6HdZ4znfmUqaJXx6A7bzUUIR6+xPp6vPrNyNgxdGASuTdEz2WuULIYU7EtWmq2SBfaUMWIescnn48FaeRD
-jYlALqGHF78Dg2T4V/iLiIMmcM3YG2KWGkiFI0DmlVB2XaBz6C2Wx+s0KKxffNvUVvHfQSRoOjA50oL+fUdhOJ9dLt17Dw9mlyf2z9hs4NvrEaflIS8zdtNL+PAJKyeAiJToi+fxi0xe58lrnyA5oiO17zz+vJXV1DUxeMyyRTcWVLh5RFe77DNPbbF5x6
-ppbnnUuSChF6X2RJglPDj3BjFkIrHWXjOCH9LRE11lhTKhLiVxYsWNuBRMMJ4l2+oCSGasYh61Xi9aslsx4/4oiEKV58m1YzSNQbW6QkMBYrU7a5fd1M7pwoqijTa/MK0nlYMkIVnAKEIx8Ywjw5/amxLUToIDLJHl9wDf8S06GR3UHHKkPOI7bGdr093v
-sAfU8NauIweKnAqTM4RIiYIoyAxHIjxPBr1vMHDGzffFZNRKF95YtBsKJT7RnhuCeuSU9Mg+q78u5vncab8A3dMmTwehjv//xMlWVu3r/wpeG3YrbmlVh1yZgIig="
-  app: roman-numeral-converter-kie
-  on:
-    repo: kiedunne/roman-numeral-converter
