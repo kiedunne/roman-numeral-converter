@@ -1,4 +1,7 @@
-# Roman Numerals Converter
+Roman Numerals Converter
+=================
+[![Build Status](https://travis-ci.org/kiedunne/roman-numeral-converter.svg?branch=master)](https://travis-ci.org/kiedunne/roman-numeral-converter)
+[![codecov](https://codecov.io/gh/kiedunne/roman-numeral-converter/branch/master/graph/badge.svg)](https://codecov.io/gh/kiedunne/roman-numeral-converter)
 
 <p align="center"><img src="./browser_view.png" width="100%" height="100%"></p>
 
@@ -17,14 +20,10 @@ open localhost:4567 in any web browser
 ```
 
 ### Testing
-
+Run all tests with spec. Code coverage is 100%.
 ```
 run rspec
 ```
-
-### Coverage
-
-![Screenshot](coverage.png)
 
 ### User Stories:
 
