@@ -43,4 +43,8 @@ class RomanNumeral
     end
     @roman_numeral = @roman_numeral.join
   end
+
+  def roman_to_decimal(numeral)
+    DICTIONARY.key(numeral)
+  end
 end

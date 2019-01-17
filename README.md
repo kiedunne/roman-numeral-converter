@@ -5,7 +5,7 @@ Roman Numerals Converter
 
 <p align="center"><img src="./browser_view.png" width="100%" height="100%"></p>
 
-A simple roman numerals converter app made to practice TDD principles.
+A simple roman numeral converter app made to practice TDD principles.
 
 Deployed at https://roman-numeral-converter-kie.herokuapp.com
 
@@ -20,11 +20,17 @@ open localhost:4567 in any web browser
 ```
 
 ### Testing
-Run all tests with spec. Code coverage is 100%.
-```
-run rspec
-```
 
+Run all tests with rspec. Code coverage is 100%.
+```
+rspec
+```
+### Linting
+
+Run rubocop linter. Code contains 0 offenses
+```
+rubocop
+```
 ### User Stories:
 
 ```

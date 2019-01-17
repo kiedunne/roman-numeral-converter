@@ -3,7 +3,7 @@
 require_relative '../model/roman_numeral.rb'
 
 describe RomanNumeral do
-  let(:subject) { described_class.new }
+  subject { described_class.new }
 
   describe '#convert - basic numbers' do
     it 'changes 1 to I' do
