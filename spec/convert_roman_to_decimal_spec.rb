@@ -10,9 +10,5 @@ describe Decimal do
       subject.convert('I')
       expect(subject.decimal).to eq 1
     end
-
-    it 'converts III to 3' do
-      expect(subject.convert('III')).to eq 3
-    end
   end
 end

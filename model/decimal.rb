@@ -7,7 +7,13 @@ class Decimal
   DICTIONARY = {
     'I' => 1,
     'IV' => 4,
-    'V' => 5
+    'V' => 5,
+    'IX' => 9,
+    'X' => 10,
+    'XL' => 40,
+    'L' => 50,
+    'XC' => 90,
+    'C' => 100
   }.freeze
 
   def initialize
@@ -23,8 +29,13 @@ class Decimal
   end
 
   def convert(numeral)
-    numeral.length.times do
-      @decimal = DICTIONARY[numeral]
+    DICTIONARY.each do |key, _val|
+      if key == numeral
+        @decimal = DICTIONARY[numeral]
+      elsif numeral.length.times do
+        @decimal = DICTIONARY[numeral]
+      end
+      end
     end
   end
 end
