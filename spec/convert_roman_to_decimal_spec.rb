@@ -1,11 +1,18 @@
 # frozen_string_literal: true
 
-require_relative '../model/roman_numeral.rb'
-describe RomanNumeral do
+require_relative '../model/decimal.rb'
 
+describe Decimal do
   subject { described_class.new }
 
-  it 'converts I to 1' do
-    expect(subject.roman_to_decimal('I')).to eq 1
+  describe '#convert - basic numbers' do
+    it 'converts I to 1' do
+      subject.convert('I')
+      expect(subject.decimal).to eq 1
+    end
+
+    it 'converts III to 3' do
+      expect(subject.convert('III')).to eq 3
+    end
   end
 end

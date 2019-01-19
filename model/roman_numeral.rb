@@ -1,7 +1,7 @@
 
 # frozen_string_literal: true
 
-# This class converts numbers
+# This class converts decimal numbers to roman numerals
 class RomanNumeral
   attr_reader :roman_numeral, :instance
 
@@ -42,9 +42,5 @@ class RomanNumeral
       end
     end
     @roman_numeral = @roman_numeral.join
-  end
-
-  def roman_to_decimal(numeral)
-    DICTIONARY.key(numeral)
   end
 end
