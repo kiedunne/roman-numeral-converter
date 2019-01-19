@@ -23,6 +23,8 @@ class Decimal
   end
 
   def convert(numeral)
-    @decimal = DICTIONARY[numeral]
+    numeral.length.times do
+      @decimal = DICTIONARY[numeral]
+    end
   end
 end
